@@ -66,40 +66,42 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 9% 15%;
-    --foreground: 0 0% 95%;
+    --background: 210 20% 8%;
+    --foreground: 210 15% 95%;
 
-    --card: 220 9% 18%;
-    --card-foreground: 0 0% 95%;
+    --card: 210 20% 10%;
+    --card-foreground: 210 15% 95%;
 
-    --popover: 220 9% 18%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 210 20% 10%;
+    --popover-foreground: 210 15% 95%;
 
-    --primary: 200 95% 55%;
-    --primary-foreground: 220 9% 15%;
+    --primary: 200 100% 60%;
+    --primary-foreground: 210 20% 8%;
 
-    --secondary: 220 9% 25%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 210 15% 18%;
+    --secondary-foreground: 210 15% 85%;
 
-    --muted: 220 9% 22%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 210 15% 15%;
+    --muted-foreground: 210 10% 60%;
 
-    --accent: 180 78% 65%;
-    --accent-foreground: 220 9% 15%;
+    --accent: 180 100% 70%;
+    --accent-foreground: 210 20% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 95%;
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 210 15% 95%;
 
-    --border: 220 9% 25%;
-    --input: 220 9% 25%;
-    --ring: 200 95% 55%;
+    --border: 210 15% 20%;
+    --input: 210 15% 18%;
+    --ring: 200 100% 60%;
     
-    /* Dark mode portfolio tokens */
-    --portfolio-gradient: linear-gradient(135deg, hsl(200 95% 55%), hsl(180 78% 65%));
-    --portfolio-gradient-soft: linear-gradient(135deg, hsl(200 95% 15%), hsl(180 78% 15%));
-    --portfolio-shadow: 0 4px 20px -2px hsl(200 95% 55% / 0.2);
-    --portfolio-shadow-lg: 0 10px 40px -4px hsl(200 95% 55% / 0.3);
-    --portfolio-glow: 0 0 30px hsl(200 95% 55% / 0.4);
+    /* Enhanced dark mode portfolio tokens */
+    --portfolio-gradient: linear-gradient(135deg, hsl(200 100% 60%), hsl(180 100% 70%));
+    --portfolio-gradient-soft: linear-gradient(135deg, hsl(210 20% 12%), hsl(210 25% 15%));
+    --portfolio-gradient-hero: linear-gradient(135deg, hsl(210 20% 8%) 0%, hsl(210 25% 12%) 50%, hsl(210 20% 8%) 100%);
+    --portfolio-shadow: 0 8px 32px -8px hsl(200 100% 60% / 0.3);
+    --portfolio-shadow-lg: 0 16px 64px -12px hsl(200 100% 60% / 0.4);
+    --portfolio-glow: 0 0 60px hsl(200 100% 60% / 0.5);
+    --portfolio-glow-accent: 0 0 40px hsl(180 100% 70% / 0.3);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;

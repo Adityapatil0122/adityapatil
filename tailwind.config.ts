@@ -69,11 +69,13 @@ export default {
 			backgroundImage: {
 				'portfolio-gradient': 'var(--portfolio-gradient)',
 				'portfolio-gradient-soft': 'var(--portfolio-gradient-soft)',
+				'portfolio-gradient-hero': 'var(--portfolio-gradient-hero)',
 			},
 			boxShadow: {
 				'portfolio': 'var(--portfolio-shadow)',
 				'portfolio-lg': 'var(--portfolio-shadow-lg)',
 				'portfolio-glow': 'var(--portfolio-glow)',
+				'portfolio-glow-accent': 'var(--portfolio-glow-accent)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
