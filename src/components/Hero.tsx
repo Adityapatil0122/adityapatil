@@ -1,17 +1,16 @@
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import adityaProfile from '@/assets/aditya-profile-new.jpg';
-
 const Hero = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-portfolio-gradient-hero relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center bg-portfolio-gradient-hero relative overflow-hidden">
       {/* Enhanced background effects */}
       <div className="absolute inset-0">
         {/* Animated gradient orbs */}
@@ -30,11 +29,7 @@ const Hero = () => {
             <div className="relative group">
               <div className="absolute -inset-4 bg-portfolio-gradient rounded-full blur opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
               <div className="relative">
-                <img
-                  src={adityaProfile}
-                  alt="Aditya Lotan Patil - Java Full-Stack Developer"
-                  className="w-56 h-56 rounded-full object-cover shadow-portfolio-lg border-4 border-card/20 backdrop-blur-sm"
-                />
+                <img src={adityaProfile} alt="Aditya Lotan Patil - Java Full-Stack Developer" className="w-56 h-56 rounded-full object-cover shadow-portfolio-lg border-4 border-card/20 backdrop-blur-sm" />
                 <div className="absolute inset-0 rounded-full bg-portfolio-gradient opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
                 
                 {/* Floating badges */}
@@ -50,9 +45,7 @@ const Hero = () => {
             <h1 className="text-6xl md:text-8xl font-bold leading-none">
               <span className="text-foreground">Hey, I'm</span>
               <br />
-              <span className="bg-portfolio-gradient bg-clip-text text-transparent drop-shadow-lg">
-                Aditya
-              </span>
+              <span className="bg-portfolio-gradient bg-clip-text text-transparent drop-shadow-lg">Aditya Patil</span>
             </h1>
 
             {/* Glowing tagline */}
@@ -74,20 +67,11 @@ const Hero = () => {
 
           {/* Enhanced CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <Button
-              size="lg"
-              className="group bg-portfolio-gradient hover:shadow-portfolio-glow transition-all duration-500 text-lg px-10 py-4 font-semibold border-0 hover:scale-105"
-              onClick={() => scrollToSection('#portfolio')}
-            >
+            <Button size="lg" className="group bg-portfolio-gradient hover:shadow-portfolio-glow transition-all duration-500 text-lg px-10 py-4 font-semibold border-0 hover:scale-105" onClick={() => scrollToSection('#portfolio')}>
               <span className="mr-2">View My Work</span>
               <div className="w-2 h-2 bg-white/80 rounded-full group-hover:animate-pulse"></div>
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="group border-2 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary hover:shadow-portfolio-glow-accent backdrop-blur-sm transition-all duration-500 text-lg px-10 py-4 font-semibold hover:scale-105"
-              onClick={() => scrollToSection('#contact')}
-            >
+            <Button variant="outline" size="lg" className="group border-2 border-primary/30 text-primary hover:bg-primary/10 hover:border-primary hover:shadow-portfolio-glow-accent backdrop-blur-sm transition-all duration-500 text-lg px-10 py-4 font-semibold hover:scale-105" onClick={() => scrollToSection('#contact')}>
               Get In Touch
               <div className="ml-2 w-0 group-hover:w-2 h-2 bg-primary rounded-full transition-all duration-300"></div>
             </Button>
@@ -95,24 +79,35 @@ const Hero = () => {
 
           {/* Enhanced Social Links */}
           <div className="flex justify-center space-x-8">
-            {[
-              { href: "mailto:adityalpatil2004@gmail.com", icon: Mail, label: "Email", color: "text-red-400" },
-              { href: "https://linkedin.com/in/aditya-patil-497b3224b", icon: Linkedin, label: "LinkedIn", color: "text-blue-400" },
-              { href: "https://github.com/Adityapatil0122", icon: Github, label: "GitHub", color: "text-gray-300" },
-              { href: "tel:+919309009518", icon: Phone, label: "Phone", color: "text-green-400" }
-            ].map(({ href, icon: Icon, label, color }) => (
-              <a
-                key={label}
-                href={href}
-                target={href.startsWith('http') ? '_blank' : undefined}
-                rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="group relative p-4 rounded-2xl bg-card/5 backdrop-blur-md border border-border/20 hover:border-primary/50 shadow-portfolio hover:shadow-portfolio-lg transition-all duration-500 hover:scale-110"
-                aria-label={label}
-              >
+            {[{
+            href: "mailto:adityalpatil2004@gmail.com",
+            icon: Mail,
+            label: "Email",
+            color: "text-red-400"
+          }, {
+            href: "https://linkedin.com/in/aditya-patil-497b3224b",
+            icon: Linkedin,
+            label: "LinkedIn",
+            color: "text-blue-400"
+          }, {
+            href: "https://github.com/Adityapatil0122",
+            icon: Github,
+            label: "GitHub",
+            color: "text-gray-300"
+          }, {
+            href: "tel:+919309009518",
+            icon: Phone,
+            label: "Phone",
+            color: "text-green-400"
+          }].map(({
+            href,
+            icon: Icon,
+            label,
+            color
+          }) => <a key={label} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel={href.startsWith('http') ? 'noopener noreferrer' : undefined} className="group relative p-4 rounded-2xl bg-card/5 backdrop-blur-md border border-border/20 hover:border-primary/50 shadow-portfolio hover:shadow-portfolio-lg transition-all duration-500 hover:scale-110" aria-label={label}>
                 <Icon size={28} className={`${color} group-hover:scale-110 transition-all duration-300`} />
                 <div className="absolute inset-0 rounded-2xl bg-portfolio-gradient opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
-              </a>
-            ))}
+              </a>)}
           </div>
         </div>
       </div>
@@ -125,8 +120,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
