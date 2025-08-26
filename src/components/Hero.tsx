@@ -45,7 +45,7 @@ const Hero = () => {
             <h1 className="text-6xl md:text-8xl font-bold leading-none">
               <span className="text-foreground">Hey, I'm</span>
               <br />
-              <span className="bg-portfolio-gradient bg-clip-text text-transparent drop-shadow-lg">Aditya Patil</span>
+              <span className="bg-portfolio-gradient bg-clip-text text-transparent drop-shadow-lg">Aditya </span>
             </h1>
 
             {/* Glowing tagline */}
