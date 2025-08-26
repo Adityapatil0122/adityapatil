@@ -123,9 +123,18 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-sans;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+  transition: color-scheme 0.3s ease-in-out;
+}
+
+/* Enhanced theme transitions */
+* {
+  transition: background-color 0.3s ease-in-out, 
+              border-color 0.3s ease-in-out, 
+              color 0.3s ease-in-out,
+              box-shadow 0.3s ease-in-out;
+}
 }
 
 /* Custom scrollbar */
