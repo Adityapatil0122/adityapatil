@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_LIVE_DEMO_URL"><strong>➥ Live Demo</strong></a>
+  <a href="https://adityapatil.lovable.app/"><strong>➥ Live Demo</strong></a>
 </p>
 
 ---
